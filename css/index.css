@@ -1,0 +1,279 @@
+/* Section css genéral */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* End Section css genéral */
+
+/* Section navbar */
+
+.nav-mod > a  span {
+    color: white; 
+    text-transform: uppercase; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+/* End Section navbar */
+
+/* Section slide */
+
+.slide .carousel-inner img {
+    height: auto;
+}
+
+/* End Section Slide */
+
+.alert-message button {
+    height: auto;
+}
+
+
+/* End SectionSlide */
+
+/* Section Nav */
+
+.navbar .collapse .navbar-nav .log-in ,
+.navbar .collapse .navbar-nav .log-out 
+{
+    color: rgb(255, 255, 255);
+}
+
+.navbar .collapse .navbar-nav .log-in:hover ,
+.navbar .collapse .navbar-nav .log-out:hover {
+    color: rgb(0, 81, 255);
+}
+
+
+@media all and (max-width : 991px){
+    .navbar .collapse .navbar-nav .nav-item a{
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+}
+
+/* End Section */
+
+/* Section gamme */
+.container1{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container1 .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container1 .info p {
+    padding: 1rem;
+}
+
+
+.container1 .btn-parte button{
+    border: 0;
+    color: white;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.alert p {
+    text-align: center;
+}
+
+/* End Section gamme */
+
+/* Section Source page  */
+
+.sourcepage .item{
+    height: auto;
+    background: green;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sourcepage .item span {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.sourcepage .item .active-span {
+    font-size: 1rem;
+    color: black;
+
+}
+
+.sourcepage .item i {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.sourcepage .item ul {
+    list-style: none;
+    display: block;
+}
+
+.sourcepage .item ul li {
+    color: grey;
+    padding: 1rem 2rem;
+}
+
+.sourcepage .item p {
+    color: grey;
+    padding: 1rem 2rem;
+}
+
+
+.sourcepage .item3 .item-contact-info-div  span{
+    color: black;
+    font-size: .7rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.sourcepage .item3 .item-contact-info-div i {
+    color: rgb(156, 156, 156);
+}
+
+.sourcepage .item3:hover .item-contact-info-div i
+{
+    color: green;
+}
+
+/* End Section Source page  */
+
+/* Footer Section */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+footer p {
+    line-height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* End Footer Section */
+
+
+/* Services page  */
+
+
+/* End Section services page  */
+
+/* Section car  */
+
+.desc img {
+    border-radius: 15px;
+}
+
+/* End Section car */
+
+/* Section Contact */
+
+.container1 .desc p i {
+    transform: rotate(90deg);
+    margin-top: 1rem;
+    animation: swip 1s infinite;
+}
+
+@keyframes swip {
+    from{
+        margin-left: -0;
+    }
+
+    to {
+        margin-left: 1rem;
+    }
+}
+
+
+.container1 .desc .icone-voire-images {
+    animation: swip2 1s infinite;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+
+@keyframes swip2 {
+    from{
+        padding-bottom: 0rem;
+    }
+
+    to {
+        padding-bottom: 1rem;
+    }
+}
+
+/* Contact page 2  */
+
+.formcontent form .input-div  .label-contact , .input-contact , .btn-contact{
+    display: block;
+    width: 100%;
+}
+
+.formcontent form .input-div  .label-contact {
+    color: rgb(156, 156, 156);
+    margin: 0;
+}
+
+.formcontent form .input-div .input-contact , textarea{
+    border: 1px solid rgba(7, 212, 17,0.5);
+}
+
+.formcontent form textarea {
+    height: 100px;
+    max-height: 200px;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.formcontent form button {
+    height: 50px;
+    border: 0;
+}
+
+.formcontent form .input-contact {
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.input-div input[type="number"]:out-of-range{
+    background: red;
+    animation: changecolor 0.5s infinite
+}
+
+@keyframes changecolor {
+    from {
+        background: transparent;
+    }
+
+    to {
+        background: red;
+    }
+}
+
+
+/* End Contact page 2 */
